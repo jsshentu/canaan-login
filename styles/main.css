@@ -16,7 +16,7 @@ h2 {
   background-color: white;
 }
 
-.btn-login {
+.btn-login, .btn-submit {
   background-color: #4CAF50;
   color: white;
   padding: 16px 20px;
@@ -26,7 +26,7 @@ h2 {
   opacity: 0.9;
 }
 
-.btn-signup {
+.btn-signup, .btn-save {
   background-color: #007BFF;
   color: white;
   padding: 16px 20px;
