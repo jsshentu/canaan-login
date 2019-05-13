@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>迦南教育信息中心</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<div>
+		<nav class="navbar navbar-light bg-light">
+  			<span class="navbar-brand mb-0 h1">迦南教育信息中心</span>
+  			<span><a href="index.html">返回首页</a></span>
+		</nav>
+	</div>
+	<div id="bd-img-container">
+		<div>
+			<form action="login.php" method="post" class="form-container">
+				<h2>留学信息表</h2>
+
+				<label for="lastname"><b>姓氏</b></label>
+				<input type="text" placeholder="输入姓氏" name="lastname" required>
+				<br>
+				<label for="firstname"><b>名字</b></label>
+				<input type="text" placeholder="输入名字" name="firstname" required>
+				<br>
+				<label for="lastname-pinyin"><b>姓氏拼音</b></label>
+				<input type="text" placeholder="输入姓氏拼音" name="lastname-pinyin" required>
+				<br>
+				<label for="firstname-pinyin"><b>名字拼音</b></label>
+				<input type="text" placeholder="输入名字拼音" name="firstname-pinyin" required>
+				<br>
+				<label for="used-name"><b>曾用名 (若不适用请填无)</b></label>
+				<input type="text" placeholder="输入曾用名" name="used-name">
+				<br>
+				<label for="birthday"><b>出生年月 (月份/日期/年份)</b></label>
+				<input type="text" placeholder="格式：05/31/1998" name="birthday" required>
+				<br>
+    			<label for="gender"><b>性别</b></label>
+    			<input type="text" placeholder="输入性别" name="gender" required>
+    			<br>
+    			<label for="m-status"><b>婚姻状况</b></label>
+    			<input type="text" placeholder="输入婚姻状况" name="m-status" required>
+    			<br>
+    			<label for="born-city"><b>出生地（城市</b></label>
+    			<input type="text" placeholder="输入城市" name="born-city" required>
+    			<br>
+    			<label for="born-state"><b>出生地（省份</b></label>
+    			<input type="text" placeholder="输入省份" name="born-state" required>
+    			<br>
+    			<label for="citizenship"><b>国籍</b></label>
+    			<input type="text" placeholder="输入国籍" name="citizenship" required>
+    			<br>
+    			<label for="other-czp"><b>其他国籍 (若不适用请填无)</b></label>
+    			<input type="text" placeholder="输入其他国籍" name="other-czp">
+    			<br>
+    			<label for="id"><b>身份证号码</b></label>
+    			<input type="text" placeholder="输入身份证号码" name="id" required>
+    			<br>
+    			<label for="address"><b>家庭地址 (包括门牌号及邮编)</b></label>
+    			<input type="text" placeholder="输入地址" name="address" required>
+    			<br>
+    			<label for="address-pinyin"><b>家庭地址拼音 (包括门牌号及邮编)</b></label>
+    			<input type="text" placeholder="输入地址拼音" name="address-pinyin" required>
+    			<br>
+    			<label for="telephone"><b>家庭电话</b></label>
+    			<input type="text" placeholder="输入家庭电话" name="telephone" required>
+    			<br>
+    			<label for="cellphone"><b>手机</b></label>
+    			<input type="text" placeholder="输入手机" name="cellphone" required>
+    			<br>
+    			<button type="submit" class="btn-save" onclick="window.location.href='confirm.html';">保存，稍后完成</button>
+    			<hr>
+    			<button type="submit" class="btn-submit">提交，确认无误</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
