@@ -17,7 +17,9 @@
 		<div>
 			<form action="login.php" method="post" class="form-container">
 				<h2>留学信息表</h2>
-
+                <br>
+                <h5>一. 个人信息</h5>
+                <hr>
 				<label for="lastname"><b>1. 姓氏</b></label>
 				<input type="text" placeholder="输入姓氏" name="lastname" required>
 				<br>
@@ -57,6 +59,8 @@
     			<label for="id"><b>13. 身份证号码</b></label>
     			<input type="text" placeholder="输入身份证号码" name="id" required>
     			<br>
+                <h5>二. 地址及电话信息</h5>
+                <hr>
     			<label for="address"><b>14. 家庭地址 (包括门牌号及邮编)</b></label>
     			<input type="text" placeholder="输入地址" name="address" required>
     			<br>
@@ -78,6 +82,8 @@
     			<label for="email"><b>20. 电子邮箱</b></label>
     			<input type="text" placeholder="输入email" name="email" required>
     			<br>
+                <h5>三. 护照信息</h5>
+                <hr>
     			<label for="passport"><b>21. 护照号码</b></label>
     			<input type="text" placeholder="输入护照号" name="passport" required>
     			<br>
@@ -105,6 +111,20 @@
     			<label for="issued-ountry2"><b>29. 护照签发国家</b></label>
     			<input type="text" placeholder="输入护照签发国家" name="issued-ountry2">
     			<br>
+                <h5>四. 旅游信息 (若是跟旅行团出行可以不必填写此大类)</h5>
+                <hr>
+                <label for="purpose"><b>30. 此次赴美目的</b></label>
+                <input type="text" placeholder="输入赴美目的" name="purpose" required>
+                <br>
+                <label for="cities"><b>31. 列举所有您计划访问的美国城市</b></label>
+                <input type="text" placeholder="如：洛杉矶，纽约，西雅图" name="cities" required>
+                <br>
+                <label for="arrival-date"><b>32. 到达日期</b></label>
+                <input type="text" placeholder="格式：05/31/2015" name="arrival-date" required>
+                <br>
+                <label for="arrival-plane"><b>33. 到达航班</b></label>
+                <input type="text" placeholder="输入航班" name="arrival-plane" required>
+                <br>
     			<button type="submit" class="btn-save" onclick="window.location.href='confirm.html';">保存，稍后完成</button>
     			<hr>
     			<button type="submit" class="btn-submit">提交，确认无误</button>
