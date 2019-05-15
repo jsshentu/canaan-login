@@ -20,110 +20,162 @@
                 <br>
                 <h5>一. 个人信息</h5>
                 <hr>
-				<label for="lastname"><b>1. 姓氏</b></label>
+				<label><b>1. 姓氏</b></label>
 				<input type="text" placeholder="输入姓氏" name="lastname" required>
 				<br>
-				<label for="firstname"><b>2. 名字</b></label>
+				<label><b>2. 名字</b></label>
 				<input type="text" placeholder="输入名字" name="firstname" required>
 				<br>
-				<label for="lastname-pinyin"><b>3. 姓氏拼音</b></label>
+				<label><b>3. 姓氏拼音</b></label>
 				<input type="text" placeholder="输入姓氏拼音" name="lastname-pinyin" required>
 				<br>
-				<label for="firstname-pinyin"><b>4. 名字拼音</b></label>
+				<label><b>4. 名字拼音</b></label>
 				<input type="text" placeholder="输入名字拼音" name="firstname-pinyin" required>
 				<br>
-				<label for="used-name"><b>5. 曾用名 (若不适用请填无)</b></label>
+				<label><b>5. 曾用名 (若不适用请填无)</b></label>
 				<input type="text" placeholder="输入曾用名" name="used-name">
 				<br>
-				<label for="birthday"><b>6. 出生年月 (月份/日期/年份)</b></label>
-				<input type="text" placeholder="格式：05/31/1998" name="birthday" required>
+				<label><b>6. 出生年月 (月份/日期/年份)</b></label>
+				<input type="text" placeholder="格式：05/31/1998，11/07/2013" name="birthday" required>
 				<br>
-    			<label for="gender"><b>7. 性别</b></label>
-    			<input type="text" placeholder="输入 男或女" name="gender" required>
+    			<label><b>7. 性别</b></label>
     			<br>
-    			<label for="m-status"><b>8. 婚姻状况</b></label>
-    			<input type="text" placeholder="输入 已婚，未婚或者离异  " name="m-status" required>
+    			<div class="stuff-container">
+    				<label><input type="radio" name="gender" value="男" required> 男</label>
+					<label><input type="radio" name="gender" value="女"> 女</label>
+    			</div>
     			<br>
-    			<label for="born-city"><b>9. 出生地（城市)</b></label>
+    			<label><b>8. 婚姻状况</b></label>
+    			<br>
+    			<div class="stuff-container">
+    				<label><input type="radio" name="m-status" value="已婚" required> 已婚</label>
+					<label><input type="radio" name="m-status" value="未婚"> 未婚</label>
+					<label><input type="radio" name="m-status" value="离异"> 离异</label>
+    			</div>
+    			<br>
+    			<label><b>9. 出生地（城市)</b></label>
     			<input type="text" placeholder="如：杭州市  北京市" name="born-city" required>
     			<br>
-    			<label for="born-state"><b>10. 出生地（省份)</b></label>
+    			<label><b>10. 出生地（省份)</b></label>
     			<input type="text" placeholder="如：浙江省。直辖市直接输入城市，如：上海市" name="born-state" required>
     			<br>
-    			<label for="citizenship"><b>11. 国籍</b></label>
+    			<label><b>11. 国籍</b></label>
     			<input type="text" placeholder="输入国籍" name="citizenship" required>
     			<br>
-    			<label for="other-czp"><b>12. 其他国籍 (若不适用请填无)</b></label>
+    			<label><b>12. 其他国籍 (若不适用请填无)</b></label>
     			<input type="text" placeholder="输入其他国籍" name="other-czp">
     			<br>
-    			<label for="id"><b>13. 身份证号码</b></label>
+    			<label><b>13. 身份证号码</b></label>
     			<input type="text" placeholder="输入身份证号码" name="id" required>
     			<br>
                 <h5>二. 地址及电话信息</h5>
                 <hr>
-    			<label for="address"><b>14. 家庭地址 (包括门牌号及邮编)</b></label>
+    			<label><b>14. 家庭地址 (包括门牌号及邮编)</b></label>
     			<input type="text" placeholder="输入地址" name="address" required>
     			<br>
-    			<label for="address-english"><b>15. 家庭地址英文 (包括门牌号及邮编)</b></label>
+    			<label><b>15. 家庭地址英文 (包括门牌号及邮编)</b></label>
     			<input type="text" placeholder="输入地址英文" name="address-english" required>
     			<br>
-    			<label for="telephone"><b>16. 家庭电话</b></label>
+    			<label><b>16. 家庭电话</b></label>
     			<input type="text" placeholder="输入家庭电话" name="telephone">
     			<br>
-    			<label for="cellphone"><b>17. 手机</b></label>
+    			<label><b>17. 手机</b></label>
     			<input type="text" placeholder="输入手机" name="cellphone" required>
     			<br>
-    			<label for="workphone"><b>18. 工作电话</b></label>
+    			<label><b>18. 工作电话</b></label>
     			<input type="text" placeholder="输入工作电话" name="workphone">
     			<br>
-    			<label for="fax"><b>19. 工作传真</b></label>
+    			<label><b>19. 工作传真</b></label>
     			<input type="text" placeholder="输入工作传真" name="fax">
     			<br>
-    			<label for="email"><b>20. 电子邮箱</b></label>
+    			<label><b>20. 电子邮箱</b></label>
     			<input type="text" placeholder="输入email" name="email" required>
     			<br>
                 <h5>三. 护照信息</h5>
                 <hr>
-    			<label for="passport"><b>21. 护照号码</b></label>
+    			<label><b>21. 护照号码</b></label>
     			<input type="text" placeholder="输入护照号" name="passport" required>
     			<br>
-    			<label for="issued-ountry"><b>22. 护照签发国家</b></label>
+    			<label><b>22. 护照签发国家</b></label>
     			<input type="text" placeholder="输入护照签发国家" name="issued-ountry" required>
     			<br>
-    			<label for="issued-city"><b>23. 护照签发地 (城市)</b></label>
+    			<label><b>23. 护照签发地 (城市)</b></label>
     			<input type="text" placeholder="输入护照签发城市" name="issued-city" required>
     			<br>
-    			<label for="issued-state"><b>24. 护照签发地 (省份或州)</b></label>
+    			<label><b>24. 护照签发地 (省份或州)</b></label>
     			<input type="text" placeholder="输入护照签发省份" name="issued-state" required>
     			<br>
-    			<label for="issued-date"><b>25. 护照签发日期</b></label>
-    			<input type="text" placeholder="格式：05/31/2015" name="issued-date" required>
+    			<label><b>25. 护照签发日期 (月份/日期/年份)</b></label>
+    			<input type="text" placeholder="格式：05/31/2015，11/07/2013" name="issued-date" required>
     			<br>
-    			<label for="expiration-date"><b>26. 护照有效期至</b></label>
-    			<input type="text" placeholder="格式：05/31/2025" name="expiration-date" required>
+    			<label><b>26. 护照有效期至 (月份/日期/年份)</b></label>
+    			<input type="text" placeholder="格式：05/31/2025，11/07/2023" name="expiration-date" required>
     			<br>
-    			<label for="passport-lost"><b>27. 您的护照是否曾经遗失或者被盗, 如果是，请填写问题28和29</b></label>
-    			<input type="text" placeholder="输入 是或否" name="passport-lost" required>
+    			<label><b>27. 您的护照是否曾经遗失或者被盗, 如果是，请填写问题28和29</b></label>
     			<br>
-    			<label for="passport2"><b>28. 护照号码</b></label>
+    			<div class="stuff-container">
+    				<label><input type="radio" name="passport-lost" value="是" required> 是</label>
+					<label><input type="radio" name="passport-lost" value="否"> 否</label>
+    			</div>
+    			<br>
+    			<label><b>28. 护照号码</b></label>
     			<input type="text" placeholder="输入护照号" name="passport2">
     			<br>
-    			<label for="issued-ountry2"><b>29. 护照签发国家</b></label>
+    			<label><b>29. 护照签发国家</b></label>
     			<input type="text" placeholder="输入护照签发国家" name="issued-ountry2">
     			<br>
                 <h5>四. 旅游信息 (若是跟旅行团出行可以不必填写此大类)</h5>
                 <hr>
-                <label for="purpose"><b>30. 此次赴美目的</b></label>
+                <label><b>30. 此次赴美目的</b></label>
                 <input type="text" placeholder="输入赴美目的" name="purpose" required>
                 <br>
-                <label for="cities"><b>31. 列举所有您计划访问的美国城市</b></label>
+                <label><b>31. 列举所有您计划访问的美国城市</b></label>
                 <input type="text" placeholder="如：洛杉矶，纽约，西雅图" name="cities" required>
                 <br>
-                <label for="arrival-date"><b>32. 到达日期</b></label>
-                <input type="text" placeholder="格式：05/31/2015" name="arrival-date" required>
+                <label><b>32. 到达日期 (月份/日期/年份)</b></label>
+                <input type="text" placeholder="格式：05/31/2015，11/07/2013" name="arrival-date" required>
                 <br>
-                <label for="arrival-plane"><b>33. 到达航班</b></label>
+                <label><b>33. 到达航班</b></label>
                 <input type="text" placeholder="输入航班" name="arrival-plane" required>
+                <br>
+                <label><b>34. 到达城市</b></label>
+                <input type="text" placeholder="输入城市" name="arrival-city" required>
+                <br>
+                <label><b>35. 离开日期 (月份/日期/年份)</b></label>
+                <input type="text" placeholder="格式：05/31/2015，11/07/2013" name="departure-date" required>
+                <br>
+                <label><b>36. 离开航班</b></label>
+                <input type="text" placeholder="输入航班" name="departure-plane" required>
+                <br>
+                <label><b>37. 离开城市</b></label>
+                <input type="text" placeholder="输入城市" name="departure-city" required>
+                <br>
+                <label><b>38. 在美期间居住地址</b></label>
+                <input type="text" placeholder="输入地址" name="us-address" required>
+                <br>
+                <h5>五. 此次旅行的费用 (若不是自己支付，请回答问题40-44)</h5>
+                <hr>
+                <label><b>39. 谁将支付此次旅行的费用</b></label>
+                <div class="stuff-container">
+    				<label><input type="radio" name="paid-by" value="自己" required> 自己</label>
+					<label><input type="radio" name="paid-by" value="他人"> 他人</label>
+					<label><input type="radio" name="paid-by" value="公司或者组织"> 公司或者组织</label>
+    			</div>
+				<br>
+				<label><b>40. 公司或者组织名称</b></label>
+                <input type="text" placeholder="输入名称" name="company-name">
+                <br>
+                <label><b>41. 公司电话</b></label>
+                <input type="text" placeholder="输入电话" name="company-phone">
+                <br>
+                <label><b>42. 付款人姓名</b></label>
+                <input type="text" placeholder="输入姓名" name="payer-name">
+                <br>
+                <label><b>43. 付款人电话</b></label>
+                <input type="text" placeholder="输入电话" name="payer-phone">
+                <br>
+                <label><b>44. 付款人与您的关系</b></label>
+                <input type="text" placeholder="输入关系" name="payer-relationship">
                 <br>
     			<button type="submit" class="btn-save" onclick="window.location.href='confirm.html';">保存，稍后完成</button>
     			<hr>
