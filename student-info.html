@@ -202,7 +202,174 @@
                     <label><input type="radio" name="been-to-us" value="否"> 否</label>
                 </div>
                 <br>
-                
+                <label><b>49. 请提供之前5次的赴美经历</b></label>
+                <input type="text" placeholder="第一次访美日期, 如：05/30/2013" name="first-time">
+                <input type="text" placeholder="第一次停留时长，如：3周" name="first-duration">
+                <hr>
+                <input type="text" placeholder="第二次访美日期， 如：05/30/2013" name="second-time">
+                <input type="text" placeholder="第二次停留时长，如：3周" name="second-duration">
+                <hr>
+                <input type="text" placeholder="第三次访美日期, 如：05/30/2013" name="third-time">
+                <input type="text" placeholder="第三次停留时长，如：3周" name="third-duration">
+                <hr>
+                <input type="text" placeholder="第四次访美日期, 如：05/30/2013" name="fourth-time">
+                <input type="text" placeholder="第四次停留时长，如：3周" name="fourth-duration">
+                <hr>
+                <input type="text" placeholder="第五次访美日期, 如：05/30/2013" name="fifth-time">
+                <input type="text" placeholder="第五次停留时长，如：3周" name="fifth-duration">
+                <br>
+                <label><b>50. 您之前是否持有美国驾照</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="had-dl" value="是" required> 是</label>
+                    <label><input type="radio" name="had-dl" value="否"> 否</label>
+                </div>
+                <br>
+                <label><b>51. 您之前是否获得美国签证, 如果是，请回答问题52</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="had-visa" value="是" required> 是</label>
+                    <label><input type="radio" name="had-visa" value="否"> 否</label>
+                </div>
+                <br>
+                <label><b>52. 签证号码 (签证页右下方红色8位数字)</b></label>
+                <input type="text" placeholder="输入8位数字" name="visa-number">
+                <br>
+                <label><b>53. 上一次获得美国签证日期</b></label>
+                <input type="text" placeholder="输入日期，如：05/30/2013" name="last-time-issued">
+                <br>
+                <label><b>54. 您此次是否申请同类型签证</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="same-type" value="是" required> 是</label>
+                    <label><input type="radio" name="same-type" value="否"> 否</label>
+                </div>
+                <br>
+                <label><b>55. 上一次申请赴美签证的城市和国家</b></label>
+                <input type="text" placeholder="如：上海市 中国" name="last-time-applied">
+                <br>
+                <label><b>56. 是否为您主要居住国家</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="permanent-residence" value="是" required> 是</label>
+                    <label><input type="radio" name="permanent-residence" value="否"> 否</label>
+                </div>
+                <br>
+                <label><b>57. 您是否留取过十指指纹</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="finger-print" value="是" required> 是</label>
+                    <label><input type="radio" name="finger-print" value="否"> 否</label>
+                </div>
+                <br>
+                <label><b>58. 您的美国签证是否曾经被盗或者遗失</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="ever-lost" value="是" required> 是</label>
+                    <label><input type="radio" name="ever-lost" value="否"> 否</label>
+                </div>
+                <br>
+                <label><b>59. 您的美国签证是否曾经被撤销或者注销过</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="ever-cancelled" value="是" required> 是</label>
+                    <label><input type="radio" name="ever-cancelled" value="否"> 否</label>
+                </div>
+                <br>
+                <label><b>60. 您是否曾经被美国拒签\被拒绝入境过美国或者在入境时被撤回您的入境申请</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="refused-entry" value="是" required> 是</label>
+                    <label><input type="radio" name="refused-entry" value="否"> 否</label>
+                </div>
+                <label><b>若是，请列出原因</b></label>
+                <input type="text" placeholder="列出原因" name="reason">
+                <br>
+                <h5>九. 美国联系人信息 (如果您是参加旅行团可以不用填写，如果是商务，探亲或个人旅游必须填写以下内容)</h5>
+                <hr>
+                <label><b>61. 联系人姓名</b></label>
+                <input type="text" placeholder="输入联系人姓名" name="contact-name">
+                <br>
+                <label><b>62. 与您的关系</b></label>
+                <input type="text" placeholder="如：朋友" name="contact-relationship">
+                <br>
+                <label><b>63. 电话号码</b></label>
+                <input type="text" placeholder="输入电话号码" name="contact-number">
+                <br>
+                <label><b>64. 组织名称</b></label>
+                <input type="text" placeholder="输入名称" name="contact-company">
+                <br>
+                <label><b>65. 联系人地址 (含门牌号及邮编)</b></label>
+                <input type="text" placeholder="输入地址" name="contact-address">
+                <br>
+                <h5>十. 亲属信息(父母) 如果是已故，也必须填写姓名</h5>
+                <hr>
+                <label><b>66. 父亲姓名</b></label>
+                <input type="text" placeholder="输入父亲姓名" name="father-name">
+                <br>
+                <label><b>67. 父亲出生日期</b></label>
+                <input type="text" placeholder="格式：05/31/2015，11/07/2013" name="father-birthday" required>
+                <br>
+                <label><b>68. 父亲是否在美国</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="father-in-us" value="是" required> 是</label>
+                    <label><input type="radio" name="father-in-us" value="否"> 否</label>
+                </div>
+                <br>
+                <label><b>69. 父亲是在美国身份</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="father-status" value="公民" required> 公民</label>
+                    <label><input type="radio" name="father-status" value="绿卡"> 绿卡</label>
+                    <label><input type="radio" name="father-status" value="工作"> 工作</label>
+                    <label><input type="radio" name="father-status" value="学生"> 学生</label>
+                </div>
+                <br>
+                <label><b>70. 母亲姓名</b></label>
+                <input type="text" placeholder="输入母亲姓名" name="mother-name">
+                <br>
+                <label><b>71. 母亲出生日期</b></label>
+                <input type="text" placeholder="格式：05/31/2015，11/07/2013" name="mother-birthday" required>
+                <br>
+                <label><b>72. 母亲是否在美国</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="mother-in-us" value="是" required> 是</label>
+                    <label><input type="radio" name="mother-in-us" value="否"> 否</label>
+                </div>
+                <br>
+                <label><b>73. 母亲是在美国身份</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="mother-status" value="公民" required> 公民</label>
+                    <label><input type="radio" name="mother-status" value="绿卡"> 绿卡</label>
+                    <label><input type="radio" name="mother-status" value="工作"> 工作</label>
+                    <label><input type="radio" name="mother-status" value="学生"> 学生</label>
+                </div>
+                <br>
+                <label><b>74. 除父母外是否还有其他亲属在美（包括子女、配偶、兄弟姐妹及其他旁系亲属), 若是，请回答问题75</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="mother-in-us" value="是" required> 是</label>
+                    <label><input type="radio" name="mother-in-us" value="否"> 否</label>
+                </div>
+                <br>
+                <label><b>75. 其他亲属1</b></label>
+                <input type="text" placeholder="亲属姓名" name="others1">
+                <br>
+                <label><b>76. 与您的关系</b></label>
+                <input type="text" placeholder="输入关系" name="others1-relationship">
+                <br>
+                <label><b>77. 在美国身份</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="others1-status" value="公民" required> 公民</label>
+                    <label><input type="radio" name="others1-status" value="绿卡"> 绿卡</label>
+                    <label><input type="radio" name="others1-status" value="工作"> 工作</label>
+                    <label><input type="radio" name="others1-status" value="学生"> 学生</label>
+                </div>
+                <br>
+                <label><b>78. 其他亲属2</b></label>
+                <input type="text" placeholder="亲属姓名" name="others2">
+                <br>
+                <label><b>79. 与您的关系</b></label>
+                <input type="text" placeholder="输入关系" name="others2-relationship">
+                <br>
+                <label><b>80. 在美国身份</b></label>
+                <div class="stuff-container">
+                    <label><input type="radio" name="others2-status" value="公民" required> 公民</label>
+                    <label><input type="radio" name="others2-status" value="绿卡"> 绿卡</label>
+                    <label><input type="radio" name="others2-status" value="工作"> 工作</label>
+                    <label><input type="radio" name="others2-status" value="学生"> 学生</label>
+                </div>
+                <br>
     			<button type="submit" class="btn-save" onclick="window.location.href='confirm.html';">保存，稍后完成</button>
     			<hr>
     			<button type="submit" class="btn-submit">提交，确认无误</button>
