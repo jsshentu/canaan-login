@@ -34,7 +34,7 @@
           <br>
           <h2>新用户</h2>
           <br>
-          <button type="submit" class="btn-signup" onclick="window.location.href='pages/sign-up.html';">注册</button>
+          <button type="submit" class="btn-signup" onclick="window.location.href='pages/sign-up.php';">注册</button>
       </form>
     </div>
   </div>
