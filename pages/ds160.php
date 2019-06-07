@@ -1,3 +1,6 @@
+<?php
+  require_once("../scripts/initialize.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
