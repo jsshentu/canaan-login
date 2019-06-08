@@ -1,8 +1,8 @@
 <?php
   //check if the email format is vaild
-  function check_email_format() {
+  function check_email_format($email_address) {
     $email_regex = '/\A[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\Z/i';
-    return preg_match($email_regex, $value) === 1;
+    return preg_match($email_regex, $email_address) === 1;
   }
 
   //check if the passwords match, used for sign-up
