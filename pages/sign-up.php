@@ -1,6 +1,7 @@
 <?php
   require_once("../scripts/initialize.php");
-
+  
+  
   
 ?>
 
@@ -23,9 +24,12 @@
     <div>
       <form action="login.php" method="post" class="form-container">
         <h2>新用户注册</h2>
-
+        <ul></ul>
         <label for="name"><b>姓名</b></label>
         <input type="text" placeholder="输入姓名" name="name" required>
+        <br>
+        <label for="birthday"><b>生日</b></label>
+        <input type="text" placeholder="格式: 月/日/年, 如: 05/31/2001  11/07/2003" name="birthday" required>
         <br>
         <label for="email"><b>邮箱</b></label>
         <input type="text" placeholder="输入邮箱" name="email" required>
