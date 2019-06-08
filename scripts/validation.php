@@ -44,7 +44,7 @@ EOD;
   }
 
   //check if password is correct
-  function check_password($email, $password) {
+  function verify_password($email, $password) {
     global $db_conn;
     $sql = <<<EOD
     SELECT password
