@@ -11,15 +11,19 @@
   }
 
   //check if the string length is greater than a certain number
-  function length_greater_than($str, $max) {
-    return strlen(trim($str)) > $max;
+  function length_greater_than($str, $min) {
+    return strlen(trim($str)) >= $min;
   }
 
   //check if the string length is less than a certain number
-  function length_less_than($str, $min) {
-    return strlen(trim($str)) < $min;
+  function length_less_than($str, $max) {
+    return strlen(trim($str)) <= $max;
   }
 
+  //check for length in a range
+  function check_password_length($password) {
+    return length_less_than($password, 6) && length_greater_than($password, 20);
+  }
   //check if the string length is equal to a certain number
   function length_equal_to($str, $num) {
     return strlen(trim($str)) === $num;
