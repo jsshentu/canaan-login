@@ -37,7 +37,7 @@ h2, h6 {
 }
 
 .btn-signup, .btn-save {
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -46,8 +46,60 @@ h2, h6 {
   opacity: 0.9;
 }
 
+/*
 .btn:hover {
   opacity: 1;
+}
+*/
+
+.btn-k12 {
+  background-color: #17a2b8;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;  
+}
+
+.btn-bachelor {
+  background-color: #dc3545;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;  
+}
+
+.btn-master {
+  background-color: #9e0b85;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;  
+}
+
+.btn-cc {
+  background-color: #cc9816;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;  
+}
+
+.btn-ds160 {
+  background-color: #1680cc;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;  
 }
 
 input[type=text], input[type=password] {
