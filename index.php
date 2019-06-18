@@ -1,5 +1,5 @@
 <?php
-  
+  require_once("scripts/handle_login.php");  
 ?>
 
 <!DOCTYPE html>
@@ -18,23 +18,35 @@
   </div>
   <div id="bd-img-container">
     <div>
-      <form action="login.php" method="post" class="form-container">
+      <form action="index.php" method="post" class="form-container">
         <h2>请登录</h2>
-
-          <label for="email"><b>邮箱</b></label>
-          <input type="text" placeholder="输入邮箱" name="email" required>
-          <br>
-          <label for="password"><b>密码</b></label>
-          <input type="password" placeholder="输入密码" name="password" required>
-
-          <button type="submit" class="btn-login">登录</button>
-          <br>
-          <br>
-          <hr>
-          <br>
-          <h2>新用户</h2>
-          <br>
-          <button type="submit" class="btn-signup" onclick="window.location.href='pages/sign-up.php';">注册</button>
+        <ul>
+          <?php
+            echo "<br>";
+            list_errors($errors);
+            unset($errors);
+          ?>
+        </ul>
+        <label for="email"><b>邮箱</b></label>
+        <input type="text" placeholder="输入邮箱" name="email" required>
+        <br>
+        <label for="password"><b>密码</b></label>
+        <input type="password" placeholder="输入密码" name="password" required>
+        <button type="submit" class="btn-login">登录</button>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h2>新用户</h2>
+        <br>
+        <button type="submit" class="btn-signup" onclick="window.location.href='pages/sign-up.php';">注册</button>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h2>讲座试听</h2>
+        <br>
+        <button type="submit" class="btn-signup" onclick="window.location.href='pages/sign-up.php';">免费注册</button>
       </form>
     </div>
   </div>
