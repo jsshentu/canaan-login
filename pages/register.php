@@ -1,5 +1,5 @@
 <?php
-  require_once("../scripts/handle_sign_up.php");
+  require_once("../scripts/handle_register.php");
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@
   </div>
   <div id="bd-img-container">
     <div>
-      <form  action="sign-up.php" method="post" class="form-container">
+      <form  action="register.php" method="post" class="form-container">
         <h2>注册免费试听讲座</h2>
         <div>
           <ul>
@@ -39,11 +39,11 @@
         <label for="email"><b>邮箱</b></label>
         <input type="text" placeholder="输入邮箱" name="email" required>
         <br>
-        <label for="phone"><b>手机</b></label>
-        <input type="text" placeholder="请输入手机号" name="phone " required>
+        <label><b>手机</b></label>
+        <input type="text" placeholder="请输入手机号" name="cellphone" required>
         <br>
-        <label for="cellphone"><b>您想了解的话题</b></label>
-        <input type="text" placeholder="请输入您想了解的话题。例如：留学，签证" name="cellphone" required>
+        <label><b>您想了解的话题</b></label>
+        <input type="text" placeholder="请输入您想了解的话题。例如：留学，签证" name="topic" required>
         <button type="submit" class="btn-login">确定</button>
       </form>
     </div>
