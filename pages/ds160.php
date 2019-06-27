@@ -13,7 +13,7 @@
 	<div>
 		<nav class="navbar navbar-light bg-light">
   			<span class="navbar-brand mb-0 h1">迦南教育信息中心</span>
-  			<span><a href="../index.html">返回首页</a></span>
+  			<span><a href="menu.html">返回目录</a></span>
 		</nav>
 	</div>
 	<div id="bd-img-container">
