@@ -22,29 +22,44 @@
 
   //check for length in a range
   function check_password_length($password) {
-    return length_less_than($password, 6) && length_greater_than($password, 20);
+    return length_less_than($password, 20) && length_greater_than($password, 6);
   }
   //check if the string length is equal to a certain number
   function length_equal_to($str, $num) {
     return strlen(trim($str)) === $num;
   }
 
-  //check if the email has already been used
-  function check_unique_email($email, $id=0) {
-    global $db_conn;
-    $sql = <<<EOD
-    SELECT * 
-    FROM sign_up
-    WHERE email = :email
-    AND id != :id
-EOD;
+  function add_single_quote($str){
+    return "'" . $str . "'";
+  }
 
-    $db = $db_conn->prepare($sql);
-    $db->bindParam(':email', $email, PDO::PARAM_STR);
-    $db->bindParam(':id', $id, PDO::PARAM_INT); 
-    $db->execute();
-    $num = $db->rowCount();
-    return $num === 0;
+  //check if the email has already been used
+  function check_unique_email($table, $email, $id=0) {
+    global $db_conn;
+    $sql;
+    $condition = <<<EOD
+      WHERE email = :email
+      AND id != :id
+EOD;
+    if($table === "register"){
+      $sql = <<<EOD
+        SELECT *
+        FROM register
+EOD;
+      $sql .= $condition;
+    } else {
+      $sql = <<<EOD
+        SELECT *
+        FROM sign_up
+EOD;
+      $sql .= $condition;
+    }
+      $db = $db_conn->prepare($sql);
+      $db->bindParam(':email', $email, PDO::PARAM_STR);
+      $db->bindParam(':id', $id, PDO::PARAM_INT);
+      $db->execute();
+      $num = $db->rowCount();
+      return $num === 0;
   }
 
   //check if password is correct
@@ -58,6 +73,17 @@ EOD;
     
     $db = $db_conn->prepare($sql);
     $db->bindParam(':email', $email, PDO::PARAM_STR);
-    $pass = $db->execute();
+    $result = $db->execute();
+    $p_arr = $db->fetch(PDO::FETCH_ASSOC);
+    $pass = $p_arr["password"];
     return $pass === $password;
+  }
+
+  //output the errors
+  function list_errors($errors_arr) {
+    if(sizeof($errors_arr)) {
+      foreach($errors_arr as $error) {
+        echo "<li style='color:red;'>" . $error . "</li>";
+      }
+    }              
   }
