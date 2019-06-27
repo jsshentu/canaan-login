@@ -1,8 +1,5 @@
 <?php
-  require_once("../scripts/initialize.php");
-  
-  
-  
+  require_once("../scripts/handle_sign_up.php");
 ?>
 
 <!DOCTYPE html>
@@ -22,23 +19,31 @@
   </div>
   <div id="bd-img-container">
     <div>
-      <form action="login.php" method="post" class="form-container">
+      <form  action="sign-up.php" method="post" class="form-container">
         <h2>新用户注册</h2>
-        <ul></ul>
+        <div>
+          <ul>
+            <?php
+              echo "<br>";
+              list_errors($errors);
+              unset($errors);
+            ?>
+          </ul>
+        </div>
         <label for="name"><b>姓名</b></label>
         <input type="text" placeholder="输入姓名" name="name" required>
         <br>
         <label for="birthday"><b>生日</b></label>
-        <input type="text" placeholder="格式: 月/日/年, 如: 05/31/2001  11/07/2003" name="birthday" required>
+        <input type="text" placeholder="格式: 年-月-日, 如: 2001-05-31  1987-11-06" name="birthday" required>
         <br>
         <label for="email"><b>邮箱</b></label>
         <input type="text" placeholder="输入邮箱" name="email" required>
         <br>
         <label for="password"><b>密码</b></label>
-        <input type="password" placeholder="输入密码" name="password" required>
+        <input type="password" placeholder="密码最少6位，最多20位，不可包含空格" name="password" required>
         <br>
-        <label for="repeat-password"><b>确认密码</b></label>
-        <input type="password" placeholder="确认密码" name="repeat-password" required>
+        <label for="repeat_password"><b>确认密码</b></label>
+        <input type="password" placeholder="确认密码" name="repeat_password" required>
         <button type="submit" class="btn-login">确定</button>
       </form>
     </div>
