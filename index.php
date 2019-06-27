@@ -46,7 +46,7 @@
         <br>
         <h2>讲座试听</h2>
         <br>
-        <button type="submit" class="btn-signup" onclick="window.location.href='pages/sign-up.php';">免费注册</button>
+        <button type="submit" class="btn-signup" onclick="window.location.href='pages/register.php';">免费注册</button>
       </form>
     </div>
   </div>
